@@ -18,45 +18,23 @@ header {
   text-align: center;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
 main {
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-section {
-  margin-bottom: 20px;
+#video-player {
   background: #fff;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-table {
+video {
   width: 100%;
-  border-collapse: collapse;
-}
-
-table, th, td {
-  border: 1px solid #ddd;
-}
-
-th, td {
-  padding: 8px;
-  text-align: left;
+  max-width: 600px; /* Adjust the max width as needed */
+  border-radius: 5px;
 }
 
 footer {
@@ -67,11 +45,4 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-}
-
-@media (max-width: 600px) {
-  nav ul li {
-      display: block;
-      margin: 10px 0;
-  }
 }
