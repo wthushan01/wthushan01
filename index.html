@@ -7,6 +7,14 @@
     <title>Homepage</title>
 </head>
 <body>
+    <script>
+        fetch('db/series_list.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log("data", data);
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+    </script>
     <div class="container">
         <div class="item">
             <div class="left-column">

@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "name": "Sample 01",
+      "jsonLocation": "./sample01"
+    },
+    {
+      "name": "Sample 02",
+      "jsonLocation": "./sample02"
+    }
+  ]
+}
