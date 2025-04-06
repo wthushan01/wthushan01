@@ -9,13 +9,19 @@ body {
   background-color: #f4f4f4;
 }
 
+.drama-addict-title {
+  align-self: center;
+  text-align: center;
+  margin-top: 8px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 600px; /* Adjust as needed */
   margin: auto;
-  padding: 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 .item {
