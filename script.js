@@ -30,7 +30,12 @@ fetch("db/series_list.json")
 function loadEpisodeList(name, jsonPath) {
   current_series_name = name;
   current_series_json = jsonPath;
-  fetch(jsonPath)
+  fetch(jsonPath, {
+    headers: {
+      'Cache-Control': 'no-cache',
+      'Pragma': 'no-cache'
+    }
+  })
     .then((response) => response.json())
     .then((dramaEpisodes) => {
       const seriesContainer = document.getElementById("seriesContainer");
