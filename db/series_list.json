@@ -11,6 +11,12 @@
       "jsonLocation": "./db/tale_of_nokdu.json",
       "image": "https://upload.wikimedia.org/wikipedia/en/4/4d/The_Tale_of_Nokdu.jpg",
       "description": "කාන්තාවක් විදිහට වෙස්වලාගෙන වැන්දඹු ගමකට ඇතුල්වෙන තරුණ වංශාධිපතියෙක්ට හමුවන අපූරු මිතුරියකගේ සහයත් ඇතිව ඔහු තමන්ගෙ අරමුණ වෙත යන කතාව තමා මේ."
+    },
+    {
+      "name": "The Forbidden Marriage",
+      "jsonLocation": "./db/the_forbidden_marriage.json",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/2c/The_Forbidden_Marriage.jpg",
+      "description": "විවාහ වීම තහනම් කරපු රාජ්‍යයක රජුට සමීප වෙන පුංචි වංචාකාරියක් ගැන හරි අපූරු කතාවක් තමා මේ."
     }
   ]
 }
