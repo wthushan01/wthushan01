@@ -18,7 +18,7 @@ fetch("db/series_list.json")
             <div class="right-column">
                 <h2>${series.name}</h2>
                 <p>${series.description}</p>
-                <button id="showEpisodeListButton" onclick="loadEpisodeList('${series.name}', '${series.jsonLocation}')">Show Episode List</button>
+                <button id="showEpisodeListButton" onclick="loadEpisodeList('${series.name}', '${series.jsonLocation}')">Show Episodes List</button>
             </div>
         `;
 
@@ -55,7 +55,7 @@ function loadEpisodeList(name, jsonPath) {
       const footerDiv = document.createElement("div");
       footerDiv.classList.add("episode-list-footer");
       footerDiv.innerHTML = `
-              <button onclick="location.reload()">Back to home</button>
+              <button onclick="location.reload()">Back To Home</button>
           `;
       seriesContainer.appendChild(footerDiv);
     })
@@ -81,7 +81,7 @@ function loadWatchContent(part, videoSrc, type) {
       </video>
       <div class="player-footer">
           <button id="backToListButton" class="player-footer-button" onclick="loadEpisodeList('${current_series_name}', '${current_series_json}')">
-              Back to list
+              Back To List
           </button>
       </div>
   `;
