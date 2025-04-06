@@ -3,22 +3,26 @@
     {
       "part": "01",
       "video": "https://meatballs.bunkr.ru/019a1960-567e-425d-8933-3450b796f8de.mp4",
-      "preview": "https://i-meatballs.bunkr.ru/thumbs/019a1960-567e-425d-8933-3450b796f8de.mp4_grid.png"
+      "preview": "https://i-meatballs.bunkr.ru/thumbs/019a1960-567e-425d-8933-3450b796f8de.mp4_grid.png",
+      "type": "direct"
     },
     {
       "part": "02",
       "video": "https://meatballs.bunkr.ru/be01af0b-9019-43d4-a027-3609223833d5.mp4",
-      "preview": "https://i-meatballs.bunkr.ru/thumbs/be01af0b-9019-43d4-a027-3609223833d5.mp4_grid.png"
+      "preview": "https://i-meatballs.bunkr.ru/thumbs/be01af0b-9019-43d4-a027-3609223833d5.mp4_grid.png",
+      "type": "direct"
     },
     {
       "part": "03",
       "video": "https://meatballs.bunkr.ru/e2937b37-26ed-4c24-a752-64755903215f.mp4",
-      "preview": "https://i-meatballs.bunkr.ru/thumbs/e2937b37-26ed-4c24-a752-64755903215f.mp4_grid.png"
+      "preview": "https://i-meatballs.bunkr.ru/thumbs/e2937b37-26ed-4c24-a752-64755903215f.mp4_grid.png",
+      "type": "direct"
     },
     {
       "part": "04",
       "video": "https://meatballs.bunkr.ru/8854ba22-a7d2-478a-8db3-02734998cd42.mp4",
-      "preview": "https://i-meatballs.bunkr.ru/thumbs/8854ba22-a7d2-478a-8db3-02734998cd42.mp4_grid.png"
+      "preview": "https://i-meatballs.bunkr.ru/thumbs/8854ba22-a7d2-478a-8db3-02734998cd42.mp4_grid.png",
+      "type": "direct"
     }
   ]
 }

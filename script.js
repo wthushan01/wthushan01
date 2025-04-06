@@ -47,7 +47,7 @@ function loadEpisodeList(name, jsonPath) {
 
         div.innerHTML = `
                   <h4>${name} - Part ${episode.part}</h4>
-                  <button id="watchButton" onclick="loadWatchContent('${episode.part}', '${episode.video}')">Watch</button>
+                  <button id="watchButton" onclick="loadWatchContent('${episode.part}', '${episode.video}', '${episode.type}')">Watch</button>
               `;
 
         seriesContainer.appendChild(div);
@@ -62,7 +62,12 @@ function loadEpisodeList(name, jsonPath) {
     .catch((error) => console.error("Error loading JSON:", error));
 }
 
-function loadWatchContent(part, videoSrc) {
+function loadWatchContent(part, videoSrc, type) {
+  if (type === 'facebook') {
+    window.open(videoSrc, '_blank');
+    return;
+  }
+
   const seriesContainer = document.getElementById("seriesContainer");
   seriesContainer.innerHTML = "";
   const div = document.createElement("div");
