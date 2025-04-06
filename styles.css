@@ -15,6 +15,7 @@ body {
   width: 100%;
   max-width: 600px; /* Adjust as needed */
   margin: auto;
+  padding: 10px;
 }
 
 .item {
@@ -25,6 +26,44 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.episode-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.player-title {
+  margin-bottom: 8px;
+}
+
+.player-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.player-footer-button {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-column {

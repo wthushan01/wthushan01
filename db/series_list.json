@@ -1,12 +1,10 @@
 {
   "data": [
     {
-      "name": "Sample 01",
-      "jsonLocation": "./sample01"
-    },
-    {
-      "name": "Sample 02",
-      "jsonLocation": "./sample02"
+      "name": "My Sassy Girl",
+      "jsonLocation": "./db/my_sassy_girl.json",
+      "image": "https://m.media-amazon.com/images/M/MV5BNzg4Mjc2NGMtNjBiZC00MTE1LTlhM2UtNTViMjNiYzZhYjMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "description": "තමා විසින් බේරාගත් තරුණ කුමාරිකාවක් ඇය සතු වටිනා යමක් හොරකම් කලායැයි කරන චෝදනාවක් නිසා ජීවිතය උඩු යටිකුරු වෙන ජොසොන් වල වාසය කරන තරුණ විද්වතාගේ කතාවයි මේ"
     }
   ]
 }
