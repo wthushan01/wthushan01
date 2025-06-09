@@ -63,6 +63,15 @@ fetch("db/drama_list.json")
                 .forEach(({ epKey, episodeNum }) => {
                   const li = document.createElement("li");
                   li.textContent = `Episode ${episodeNum.toString().padStart(2, '0')}`;
+                  li.style.cursor = "pointer";
+                  li.style.color = "blue";
+                  li.style.textDecoration = "underline";
+                  li.onclick = () => {
+                    const fileId = episodeList[epKey];
+                    if (fileId) {
+                      window.open(`https://t.me/DramaAddictLk_Bot?start=unlock_video_${fileId}`, '_blank');
+                    }
+                  };
                   ul.appendChild(li);
                 });
               seriesContainer.appendChild(ul);
