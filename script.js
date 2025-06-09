@@ -4,34 +4,25 @@ fetch("db/drama_list.json")
     const seriesContainer = document.getElementById("seriesContainer");
     seriesContainer.innerHTML = "";
 
-    // Create table
-    const table = document.createElement("table");
-    table.style.width = "100%";
-    table.style.border = "1px solid black";
-    table.style.borderCollapse = "collapse";
+    // Create a plain list (no bullets)
+    const list = document.createElement("ul");
+    list.style.listStyle = "none";
+    list.style.padding = "0";
+    list.style.margin = "0";
 
-    // Table header
-    const thead = document.createElement("thead");
-    thead.innerHTML = `
-      <tr>
-        <th>Drama Name</th>
-      </tr>
-    `;
-    table.appendChild(thead);
-
-    // Table body
-    const tbody = document.createElement("tbody");
     Object.entries(dramaList).forEach(([name, id]) => {
       // Convert snake_case to Title Case With Spaces
       const formattedName = name
         .split('_')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td style="cursor:pointer; color:blue; text-decoration:underline;">${formattedName}</td>
-      `;
-      row.firstElementChild.onclick = () => {
+      const li = document.createElement("li");
+      li.style.margin = "8px 0";
+      li.style.cursor = "pointer";
+      li.style.color = "blue";
+      li.style.textDecoration = "underline";
+      li.textContent = formattedName;
+      li.onclick = () => {
         // Load the episode list for the selected drama
         fetch(`db/${id}.json`)
           .then(response => response.json())
@@ -66,6 +57,8 @@ fetch("db/drama_list.json")
               seriesContainer.appendChild(seasonHeader);
 
               const ul = document.createElement("ul");
+              ul.style.listStyle = "none";
+              ul.style.padding = "0";
               seasons[seasonNum]
                 .sort((a, b) => a.episodeNum - b.episodeNum)
                 .forEach(({ epKey, episodeNum }) => {
@@ -86,10 +79,9 @@ fetch("db/drama_list.json")
             alert("Could not load episode list.");
           });
       };
-      tbody.appendChild(row);
+      list.appendChild(li);
     });
-    table.appendChild(tbody);
 
-    seriesContainer.appendChild(table);
+    seriesContainer.appendChild(list);
   })
   .catch((error) => console.error("Error loading drama_list.json:", error));
