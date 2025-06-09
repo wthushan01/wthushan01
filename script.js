@@ -69,7 +69,7 @@ fetch("db/drama_list.json")
                   li.onclick = () => {
                     const fileId = episodeList[epKey];
                     if (fileId) {
-                      window.open(`https://t.me/DramaAddictLk_Bot?start=unlock_video_${fileId}`, '_blank');
+                      window.open(`https://t.me/DramaAddictBot?start=unlock_video_${fileId}`, '_blank');
                     }
                   };
                   ul.appendChild(li);
