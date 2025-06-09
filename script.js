@@ -30,9 +30,8 @@ fetch("db/drama_list.json")
             const seriesContainer = document.getElementById("seriesContainer");
             seriesContainer.innerHTML = "";
 
-            const title = document.createElement("h2");
-            title.textContent = formattedName + " - Episodes";
-            seriesContainer.appendChild(title);
+            const pageTitle = document.getElementById("pageTitle");
+            pageTitle.innerHTML = "DramaAddict | " + formattedName;
 
             // Group episodes by season
             const seasons = {};
@@ -63,7 +62,7 @@ fetch("db/drama_list.json")
                 .sort((a, b) => a.episodeNum - b.episodeNum)
                 .forEach(({ epKey, episodeNum }) => {
                   const li = document.createElement("li");
-                  li.textContent = `Episode ${episodeNum.toString().padStart(2, '0')} (${epKey})`;
+                  li.textContent = `Episode ${episodeNum.toString().padStart(2, '0')}`;
                   ul.appendChild(li);
                 });
               seriesContainer.appendChild(ul);
