@@ -30,8 +30,8 @@ fetch("db/drama_list.json")
             const seriesContainer = document.getElementById("seriesContainer");
             seriesContainer.innerHTML = "";
 
-            const pageTitle = document.getElementById("pageTitle");
-            pageTitle.innerHTML = "DramaAddict | " + formattedName;
+            const pageHeader = document.getElementById("pageHeader");
+            pageHeader.innerHTML = "DramaAddict | " + formattedName;
 
             // Group episodes by season
             const seasons = {};
