@@ -67,7 +67,7 @@ fetch("db/drama_list.json")
                   li.style.color = "blue";
                   li.style.textDecoration = "underline";
                   li.onclick = () => {
-                    const fileId = episodeList[epKey];
+                    const fileId = `${id}_${epKey}`;
                     if (fileId) {
                       window.open(`https://t.me/DramaAddictBot?start=unlock_video_${fileId}`, '_blank');
                     }
